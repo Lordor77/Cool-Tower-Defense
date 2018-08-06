@@ -7,6 +7,9 @@ public class TowerShoot : MonoBehaviour {
     [SerializeField]
     private GameObject Bullet;
 
+    public Transform target;
+
+
     // Use this for initialization
     void Start ()
     { 
