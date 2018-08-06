@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour {
-
     // Variables
     public GameObject target;
-    private float speed = 5f;
+    private float speed = 8f;
 
 
 	// Use this for initialization
