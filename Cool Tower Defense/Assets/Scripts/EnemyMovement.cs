@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour {
 
     // Variables
-    public Transform home;
+    public GameObject target;
+    private float speed = 5f;
 
 
 	// Use this for initialization
@@ -15,6 +16,7 @@ public class EnemyMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(new Vector3(home.transform.position.x, home.transform.position.y, home.transform.position.z));
+        transform.LookAt(target.transform);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }
