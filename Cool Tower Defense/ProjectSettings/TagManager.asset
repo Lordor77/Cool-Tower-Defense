@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Flag_02
+  - Flag_01
+  - Flag_03
+  - Flag_04
+  - Flag_05
+  - Flag_06
+  - Flag_07
   layers:
   - Default
   - TransparentFX
