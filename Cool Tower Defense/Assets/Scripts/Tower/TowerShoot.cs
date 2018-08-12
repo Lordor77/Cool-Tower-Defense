@@ -11,14 +11,16 @@ public class TowerShoot : MonoBehaviour {
     public float fireRate = 1f;
     public float fireCountDown = 0f;
     public Transform PartToRotate;
-    
+    //private SphereCollider range;
+    //public float towerRange = 3;
     
 
 
     // Use this for initialization
     void Start ()
-    { 
-        
+    {
+        //range = GetComponent<SphereCollider>();
+        //range.radius = towerRange;
 	}
 	
 	// Update is called once per frame
@@ -44,8 +46,9 @@ public class TowerShoot : MonoBehaviour {
         if (target == null)
         {
             target = other.transform;
-        }   
+        }
     }
+    /*
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("triggered");
@@ -55,6 +58,7 @@ public class TowerShoot : MonoBehaviour {
             //_hasTrarget = true;
         }
     }
+    */
     private void OnTriggerExit(Collider other)
     {
         target = null;
