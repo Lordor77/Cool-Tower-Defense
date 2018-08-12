@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Flag_01
   - Flag_02
+  - Flag_03
+  - Flag_04
+  - Flag_05
+  - Flag_06
+  - Flag_07
+  - HomeCamp
+  - txt_Lives
+  - Enemy_01
   layers:
   - Default
   - TransparentFX
