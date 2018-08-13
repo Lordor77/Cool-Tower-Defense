@@ -38,11 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.18387443, g: 0.22875494, b: 0.3015689, a: 1}
+<<<<<<< HEAD
 =======
   m_IndirectSpecularColor: {r: 0.17461213, g: 0.2184014, b: 0.30065882, a: 1}
 >>>>>>> parent of 17048d5... 1
+=======
+>>>>>>> parent of 7366af5... Merge branch 'Inon'
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
