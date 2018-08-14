@@ -3,25 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - Flag_02
-  - Flag_01
-=======
-  - Flag_01
-  - Flag_02
->>>>>>> Dor
-  - Flag_03
-  - Flag_04
-  - Flag_05
-  - Flag_06
-  - Flag_07
-<<<<<<< HEAD
-=======
-  - HomeCamp
-  - txt_Lives
-  - Enemy_01
->>>>>>> Dor
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -31,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 
