@@ -26,6 +26,8 @@ sysinfo.txt
 *.user
 *.userprefs
 *.pidb
+.meta
+.unity.meta
 .DS_Store
 
 ###
