@@ -102,7 +102,7 @@ public class Auto_Quality_FPS : MonoBehaviour
 					//Current Quality
 					Current_Quality = QualitySettings.GetQualityLevel();
 
-					if(ShowDebugLog) { Debug.Log("Current FPS = " + Current_FPS); }
+					//if(ShowDebugLog) { Debug.Log("Current FPS = " + Current_FPS); }
 
 					//If fps is below the minimum fps target
 					if(Current_FPS < TargetFPS_min)
@@ -121,7 +121,7 @@ public class Auto_Quality_FPS : MonoBehaviour
 						else //Current_Quality == QualitySettings.GetQualityLevel()
 						{
 							//If we want to show some informations in the console
-							if(ShowDebugLog) { Debug.Log("Currently in the lowest quality level (" + Current_Quality + ")"); }
+							//if(ShowDebugLog) { Debug.Log("Currently in the lowest quality level (" + Current_Quality + ")"); }
 						}
 
 						//We count how many times a quality settings is used
@@ -154,7 +154,7 @@ public class Auto_Quality_FPS : MonoBehaviour
 						}
 						else //Between min and max fps
 						{
-							if(ShowDebugLog) { Debug.Log("Between min and max fps: No changes to the current quality level (" + Current_Quality + ")"); }
+							//if(ShowDebugLog) { Debug.Log("Between min and max fps: No changes to the current quality level (" + Current_Quality + ")"); }
 							Currently_CheckEvery = Then_WhenItsStable_CheckEvery;
 							SaveCurrentQualitySettings();
 						}
@@ -221,7 +221,7 @@ public class Auto_Quality_FPS : MonoBehaviour
 			cpt++;
 		}
 
-		if(ShowDebugLog) { Debug.Log("The most used quality level is (" + save_cpt + ")."); }
+		//if(ShowDebugLog) { Debug.Log("The most used quality level is (" + save_cpt + ")."); }
 
 		//If the current quality level is NOT the most used quality level
 		if(QualitySettings.GetQualityLevel() != save_cpt)
@@ -233,7 +233,7 @@ public class Auto_Quality_FPS : MonoBehaviour
 		}
 		else //the current quality level is the most used quality level
 		{
-			if(ShowDebugLog) { Debug.Log("And that's the current quality level."); }
+			//if(ShowDebugLog) { Debug.Log("And that's the current quality level."); }
 		}
 
 		//We disable the script
@@ -250,6 +250,4 @@ public class Auto_Quality_FPS : MonoBehaviour
 		//It's OK to start counting FPS
 		OK_To_Start_Counting = true;
 	}
-
-
 }

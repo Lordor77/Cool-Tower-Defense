@@ -5,15 +5,18 @@ using UnityEngine.UI;
 
 public class CoinsManager : MonoBehaviour {
 
+    // Variables
     public Text coinsText;
-    // Use this for initialization
+    public static int coinsAmount = 0;
 
 
-    void Start () {
-        coinsText.text = ("TEST (CoinManager.cs)");
+
+    void Start ()
+    {
+        coinsText.text = coinsAmount.ToString();
     }
-
-    // Update is called once per frame
-    void Update () {
+    
+    void Update ()
+    {
     }
 }
