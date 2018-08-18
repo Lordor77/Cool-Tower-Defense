@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33840034725213728}
   - component: {fileID: 23416864505014834}
   - component: {fileID: 65679730441908766}
+  - component: {fileID: 114325646188367886}
   m_Layer: 0
   m_Name: HomeCamp
   m_TagString: Untagged
@@ -96,3 +97,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114325646188367886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291778091462086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9794defd40d164949b31107dda462669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GUI_Lives: {fileID: 0}
