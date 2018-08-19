@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private float lookSensitivity = 3f;
     private Rigidbody rb;
 
+    public static Transform myTransform;
     private PlayerMov motor;
 
 
