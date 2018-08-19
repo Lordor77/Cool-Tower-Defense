@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour {
         else
         {
             transform.LookAt(target);
-            transform.Translate(Vector3.forward*bulletSpeed*Time.deltaTime);
+            transform.Translate(Vector3.forward * bulletSpeed * Time.deltaTime);
 
         }
 	}
