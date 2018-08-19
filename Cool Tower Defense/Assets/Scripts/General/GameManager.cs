@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
+
+    /*
+    // Variables
     public float dmg;
     public float fireRate;
     public float range;
@@ -26,4 +29,5 @@ public class GameManager : MonoBehaviour {
 
         }
 	}
+    */
 }

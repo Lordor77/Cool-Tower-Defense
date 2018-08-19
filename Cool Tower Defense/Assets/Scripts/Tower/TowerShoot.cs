@@ -28,10 +28,10 @@ public class TowerShoot : MonoBehaviour {
     {
         if (target != null)
         {
-            Vector3 dir = target.position - transform.position;
-            Quaternion lookRotation = Quaternion.LookRotation(dir);
-            Vector3 rotation = Quaternion.Lerp(PartToRotate.rotation,lookRotation,Time.deltaTime * 15f).eulerAngles;
-            PartToRotate.rotation = Quaternion.Euler(0f, rotation.y,0f);
+            //Vector3 dir = target.position - transform.position;
+            //Quaternion lookRotation = Quaternion.LookRotation(dir);
+            //Vector3 rotation = Quaternion.Lerp(PartToRotate.rotation,lookRotation,Time.deltaTime * 15f).eulerAngles;
+            //PartToRotate.rotation = Quaternion.Euler(0f, rotation.y,0f);
             if (fireCountDown <= 0)
             {
                 Shoot();
@@ -39,7 +39,6 @@ public class TowerShoot : MonoBehaviour {
             }
             fireCountDown -= Time.fixedDeltaTime;
         }
-        
 	}
     private void OnTriggerStay(Collider other)
     {
@@ -48,7 +47,7 @@ public class TowerShoot : MonoBehaviour {
             target = other.transform;
         }
     }
-    /*
+    //*
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("triggered");
@@ -58,15 +57,16 @@ public class TowerShoot : MonoBehaviour {
             //_hasTrarget = true;
         }
     }
-    */
+    //*/
     private void OnTriggerExit(Collider other)
     {
         target = null;
        // _hasTrarget = false;
     }
+
     public void Shoot()
     {
-        GameObject bulletGo =  Instantiate(bulletPrefab,firePoint.position,firePoint.rotation) as GameObject;
+        GameObject bulletGo =  Instantiate(bulletPrefab, firePoint.position, firePoint.rotation) as GameObject;
         Bullet bullet = bulletGo.GetComponent<Bullet>();
         if (bullet != null)
         {
